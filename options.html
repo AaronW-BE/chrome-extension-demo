@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>设置</title>
-</head>
-<body>
-    <div>
-        <label for="file">选择题目：</label>
-        <input type="file" id="file">
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>设置</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <label for="file">选择题库：</label>
+                <input type="file" id="file">
+            </div>
+            <div>
+                <label>自动下一题：
+                    <input type="radio" name="autoNext" /> 是
+                    <input type="radio" name="autoNext" /> 否
+                </label>
+            </div>
+            <div>
+                <label for="interval">跳转间隔：</label>
+                <input type="number" id="interval">
+            </div>
+            <div>
+                <input type="submit" value="保存">
+            </div>
+        </div>
+        <script src="./js/options.js"></script>
+    </body>
 </html>

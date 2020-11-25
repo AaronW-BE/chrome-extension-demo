@@ -14,7 +14,7 @@ function init() {
   const questionTitle = $(".question-title")[0];
   console.log(questionTitle.innerText)
 
-  clickOption('发生非法干扰行为时，机组成员必须与行为人先行谈判');
+  clickOption('腾讯');
   // const questionContainer = $(".questionContainer")
 
   // const rows = $(questionContainer).find('.select .row');
@@ -26,6 +26,7 @@ function init() {
 
 function doNext() {
   console.log('do next');
+  $('button.exam-next-btn').trigger('click');
 }
 
 function clickOption(content) {
