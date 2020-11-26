@@ -5,14 +5,17 @@
         <title>设置</title>
     </head>
     <body>
-        <div>
+        <div id="app">
             <div>
                 <label for="file">选择题库：</label>
-                <input type="file" id="file">
+                <input type="file" id="file" ref="file">
             </div>
             <div>
-                <label>自动下一题：
+                <span>自动下一题：</span>
+                <label>
                     <input type="radio" name="autoNext" /> 是
+                </label>
+                <label>
                     <input type="radio" name="autoNext" /> 否
                 </label>
             </div>
@@ -24,6 +27,7 @@
                 <input type="submit" value="保存">
             </div>
         </div>
+        <script src="./js/vue.js"></script>
         <script src="./js/options.js"></script>
     </body>
 </html>
