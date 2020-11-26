@@ -1,10 +1,16 @@
 let app = new Vue({
     el: '#app',
-    data: {},
+    data: {
+        visible: false
+    },
     mounted() {
         this.$refs.file.addEventListener('change', this.fileChanged);
     },
     methods: {
+        show() {
+            this.visible = true;
+            console.log('click');
+        },
         fileChanged(e) {
             let files = e.target.files, reader = new FileReader();
             reader.onload = this._imp;

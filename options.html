@@ -3,9 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>设置</title>
+        <link rel="stylesheet" href="./css/iview.css" >
     </head>
     <body>
         <div id="app">
+            <Modal v-model="visible" title="Welcome">Welcome to ViewUI</Modal>
             <div>
                 <label for="file">选择题库：</label>
                 <input type="file" id="file" ref="file">
@@ -24,10 +26,12 @@
                 <input type="number" id="interval">
             </div>
             <div>
+                <i-button @click="show">Click me!</i-button>
                 <input type="submit" value="保存">
             </div>
         </div>
         <script src="./js/vue.js"></script>
+        <script src="./js/iview.min.js"></script>
         <script src="./js/options.js"></script>
     </body>
 </html>
